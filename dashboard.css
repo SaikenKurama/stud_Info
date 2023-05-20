@@ -7,18 +7,19 @@ list-style:  none ;
 text-decoration : none ; 
 font-family : 'Poppins' ,sans-serif ; 
 }
-body{
-    
-    background-image: url(bg.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size:1500px ;
-    z-index: 1;
-    
+html{
+  min-height: 100%;
 }
+body{
+
+    background:rgba(0, 0, 0, 0.466) url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}/*
 body::after{
     content: '';
-    position: absolute;
+    position: relative;
     left:0;
     top: 0;
     height: 100%;
@@ -26,7 +27,7 @@ body::after{
     background-color: rgba(0, 0, 0, 0.9);
     opacity: .7;
     z-index: -1;
-}
+}*/
 .sidebar { 
 width : 345px ; 
 position : fixed ; 
